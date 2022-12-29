@@ -1,0 +1,13 @@
+version: '1.0'
+services:
+  react:
+    build: .
+    volumes:
+      - ./:/app
+    command: sh -c "cd three-ts && npm i && npm run dev"
+
+    ports:
+      - "5173:5173"
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
