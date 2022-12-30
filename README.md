@@ -9,7 +9,8 @@
   - 18.0.2
 - typescript
   - 4.9.3
-- rust
+- rustup
+  - 1.25.1
 - cargo
   - 1.66.0
 - cargo-generate
