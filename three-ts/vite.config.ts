@@ -6,5 +6,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
+    fs: {
+      // プロジェクトルートから1つ上の階層にあるファイルをインポートできるようにする
+      allow: ['..']
+    }
   },
 })
